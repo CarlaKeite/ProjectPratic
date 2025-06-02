@@ -1,0 +1,118 @@
+    
+  /* Reset básico e fonte */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #fff;
+  color: #000;
+}
+
+/* Cabeçalho roxo */
+header {
+  background-color: #4b31e0;
+  color: white;
+  text-align: center;
+  padding: 25px 10px;
+  font-weight: bold;
+  font-size: 1.3rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Caixa azul de introdução */
+.intro {
+  background-color: #2253f7;
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px 25px;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+  color: white;
+  font-size: 0.9rem;
+}
+
+.intro p:not(:last-child) {
+  margin-bottom: 0.7rem;
+}
+
+/* Links pretos com texto amarelo */
+.links-uteis {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.links-uteis a {
+  display: inline-block;
+  background-color: black;
+  color: #dede0d;
+  padding: 8px 20px;
+  margin: 0 10px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.links-uteis a:hover {
+  background-color: #222;
+}
+
+/* Container dos cards */
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin: 30px auto 40px;
+  max-width: 900px;
+  padding: 0 15px;
+  flex-wrap: wrap;
+}
+
+/* Cartões com degrade translúcido */
+.card {
+  flex: 1 1 260px;
+  max-width: 260px;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  color: #000;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+/* Degrade com transparência para cada card */
+.card1 {
+  background: linear-gradient(135deg, rgba(255,192,203,0.8), rgba(255,182,193,0.6));
+}
+
+.card2 {
+  background: linear-gradient(135deg, rgba(255,218,185,0.85), rgba(255,228,196,0.6));
+}
+
+.card3 {
+  background: linear-gradient(135deg, rgba(255,255,204,0.85), rgba(255,255,224,0.6));
+}
+
+/* Títulos dos cards */
+.card h3 {
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+/* Responsividade */
+@media (max-width: 840px) {
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    max-width: 90%;
+    margin-bottom: 20px;
+  }
+}
